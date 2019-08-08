@@ -1,5 +1,5 @@
 ---
-name: "create_release"
+name: "create_antidote_release"
 runner_type: "python-script"
 description: "Create a new release for a GitHub repository"
 enabled: true

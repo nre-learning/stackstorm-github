@@ -27,15 +27,15 @@ class CreateReleaseAction(BaseGithubAction):
         minor = int(minor)
         patch = int(patch)
 
-        if version_increase == "major":
-            major += 1
-            minor = 0
-            patch = 0
-        elif version_increase == "minor":
-            minor += 1
-            patch = 0
-        elif version_increase == "patch":
-            patch += 1
+        # if version_increase == "major":
+        #     major += 1
+        #     minor = 0
+        #     patch = 0
+        # elif version_increase == "minor":
+        #     minor += 1
+        #     patch = 0
+        # elif version_increase == "patch":
+        #     patch += 1
 
         tag_name = "v{}.{}.{}".format(major,
                                       minor,
